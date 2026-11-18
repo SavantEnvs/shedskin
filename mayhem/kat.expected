@@ -1,0 +1,33 @@
+str.center ****Hello, World****
+str.ljust Hello, World---|
+str.rjust ...Hello, World
+str.count 2 13 2
+str.find 4 8 8 -1
+str.replace HeLLo, World
+str.split ['Hello', 'World'] ['a', 'b', '', 'c'] ['a', 'b']
+str.join x-y-z
+str.misc HELLO, WORLD hello, world hELLO, wORLD dlroW ,olleH llo, 
+bytes 2 b'..abc..' 78797a
+format    42|42   |003.1|abc|ff|'q'
+format2 1     ab cd    | 0002.500
+re.search ('555', '1234')
+re.sub a_b_c_d
+re.subn ('bXnXnX', 3)
+re.findall ['ab', 'cd', 'ef']
+re.split ['a', 'b', 'c']
+struct.pack feff070000000000000000010000
+struct.unpack 258 3 -1
+struct.calcsize 14
+heapq [1, 2, 3, 4, 5]
+nlargest [9, 7]
+bisect 2 3 0
+base64 b'c2hlZHNraW4=' b'shedskin'
+binascii 907060870 b'00ff'
+datetime 2024-02-29T13:05:09 2024-03-02T01:05:09
+fromiso 250000
+date 5 1:02:05
+csv [['a', 'b,c', 'd'], ['1', '2', '3']]
+configparser v 42 v-x
+list [1, 2, 3, 1, 2, 3] [3, 2, 1] 2
+dict [('a', 1), ('b', 2)] 2
+io xyz

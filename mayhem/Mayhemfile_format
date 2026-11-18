@@ -1,0 +1,9 @@
+project: savantenvs/shedskin
+target: format
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/format/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_format
+    libfuzzer: true
+    timeout: 30

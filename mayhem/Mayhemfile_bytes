@@ -1,0 +1,9 @@
+project: savantenvs/shedskin
+target: bytes
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/bytes/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_bytes
+    libfuzzer: true
+    timeout: 30

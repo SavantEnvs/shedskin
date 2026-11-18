@@ -1,0 +1,9 @@
+project: savantenvs/shedskin
+target: re
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/re/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_re
+    libfuzzer: true
+    timeout: 30

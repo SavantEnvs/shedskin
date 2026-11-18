@@ -1,0 +1,9 @@
+project: savantenvs/shedskin
+target: socket
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/socket/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_socket
+    libfuzzer: true
+    timeout: 30

@@ -1,0 +1,9 @@
+project: savantenvs/shedskin
+target: getopt
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/getopt/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_getopt
+    libfuzzer: true
+    timeout: 30
